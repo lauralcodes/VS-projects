@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<title> New lesson forms </title>
+<h1> Forms </h1>
+
+<form action="submit.html"> 
+    <label for="Name">  Name </label>  <!-- with for and id,  label and the input box conect to each other-->
+    <input type="text" id="Name">
+    <br> <br>
+    <label for="Email" > Email </label>
+    <input type="email" id="Email">
+    <br> <br>
+    <label for="Password"> Password </label>
+    <input type="password" id="Password">
+    <br><br>
+    <label for="age">Age</label>
+    <input type="number" id="age">
+    <br> <br> 
+    <label for="number"> Social security number </label>
+    <input type="number" id="number" name="socialsecuritynumber">    <!-- name=socialsecuritynumber, This is important when submitting a form.The name is what gets sent to the server -->
+     <!--Example when form is submitted: socialsecuritynumber=19991212-->                       
+    <br> <br> 
+
+    <!-- Input field for Swedish personal number -->
+    <label for="personalnumber"> Swedish security number </label>
+    <input
+        type="text" 
+        id="personalnumber"
+        name="personalnumber"
+        placeholder="YYYYMMDD-XXXX"
+        pattern="\d{6,8}-\d{4}"
+        required
+    >
+
+        <!-- 
+        Pattern explanation:
+        \d{6,8}  = 6 to 8 digits (YYMMDD or YYYYMMDD)
+        -        = hyphen
+        \d{4}    = 4 digits
+        required = field must be filled
+        -->
+
+
+
+<p> Custom message</p>
+<textarea>Write your message here: </textarea>
+
+   
+</form>
+
+
+
+
+
+
+
+
+</form>
+
+   <br> <br> 
+    <label> Name:  </label>
+    <input type="email"> <br> <br>
+
+    <label> Bookinng date: </label>
+    <input type="date"> <br> <br>
+
+    <label> Adress: </label>
+    <input type="text">
+       <br> <br> <textarea rows="4"></textarea>
+    <br> <br> 
+
+    <select>
+        <option> Full board </option>
+        <option> Half board </option>
+        <option> Bread & Breakfast</option>
+    </select>
+    <br> <br> 
+    <button> Submit</button>
+
+
+
+
+</form>
+
+    
+</body>
+
+
+
+</html>
